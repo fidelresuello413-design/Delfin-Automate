@@ -165,7 +165,7 @@ const RESUME_DATA = {
       title: "zapier",
       color: "text-orange-500",
       logoUrl: "https://cdn.simpleicons.org/zapier/FF6600",
-      bgImage: "/src/assets/images/zapier_bg_1779679133369.png",
+      bgImage: "/images/zapier_bg_1779679133369.png",
       cta: "View Case Study >",
       catalog: [
         {
@@ -285,7 +285,7 @@ const RESUME_DATA = {
       tags: ["Make.com", "Xero", "Asana", "Google Drive"],
       color: "text-violet-500",
       logoUrl: "https://cdn.simpleicons.org/make/6D28D9",
-      bgImage: "/src/assets/images/make_bg_1779679599892.png", // Integration network
+      bgImage: "/images/make_bg_1779679599892.png",
       cta: "View Case Study >"
     },
     {
@@ -295,8 +295,8 @@ const RESUME_DATA = {
       tags: ["GHL", "CRM", "SaaS"],
       color: "text-emerald-500",
       isComingSoon: false,
-      logoUrl: "/src/assets/images/ghl_bg_1779693692076.png",
-      bgImage: "/src/assets/images/ghl_bg_1779693692076.png", 
+      logoUrl: "/images/ghl_bg_1779693692076.png",
+      bgImage: "/images/ghl_bg_1779693692076.png",
       cta: "View Case Study >",
       technicalSummary: "Configured comprehensive GoHighLevel CRM pipelines and automated trigger response systems. Implemented customized client onboarding funnels, scheduled booking calendars, and automated lead nurturing sequences across SMS and Email channels.",
       toolsUsed: ["GoHighLevel", "Twilio", "Stripe", "Zapier", "Webhooks"],
@@ -309,7 +309,7 @@ const RESUME_DATA = {
       tags: ["n8n", "Self-hosted", "Automation"],
       color: "text-red-500",
       logoUrl: "https://cdn.simpleicons.org/n8n/EA4B71",
-      bgImage: "/src/assets/images/n8n_exact_bg_1779688051276.png",
+      bgImage: "/images/n8n_exact_bg_1779688051276.png",
       cta: "View Case Study >",
       catalog: [
         {
