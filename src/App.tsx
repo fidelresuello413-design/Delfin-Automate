@@ -28,7 +28,7 @@ import {
   Menu
 } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'motion/react';
-import portfolioImage from './assets/images/portfolio picture.jpeg';
+const portfolioImage = '/images/portfolio picture.jpeg';
 
 // --- Imports ---
 
@@ -171,7 +171,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "Follow-up Automation",
-          image: "/src/assets/images/Follow-up automation.png",
+          image: "/images/Follow-up automation.png",
           problem: "The team struggled with an inconsistent manual method for reviewing and chasing open client quotes, causing heavy administrative overhead every single day.",
           effects: "This caused dropped pipeline leads, prolonged sales cycles, and direct leakage in revenue generation.",
           solution: "Integrated a weekly Zapier scheduler to scour open Asana workspaces and instantly dispatch automated follow-up emails via Gmail.",
@@ -186,7 +186,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "Lead Enrichment Automation",
-          image: "/src/assets/images/Leads Enrichment - v1.png",
+          image: "/images/Leads Enrichment - v1.png",
           problem: "Sales development teams were wasting over 20 hours weekly manually digging across disjointed browser tabs and directories to profile inbound accounts.",
           effects: "Severe speed-to-lead latency, missing firmographic metrics, high outbound bounce rates, and direct leakage of premium enterprise pipeline opportunities.",
           solution: "Engineered an automated data enrichment workflow utilizing webhook triggers to instantly query background verification engines and append rich profile properties in real-time.",
@@ -201,7 +201,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "Automate Leads Action",
-          image: "/src/assets/images/Automate Leads Action.png",
+          image: "/images/Automate Leads Action.png",
           problem: "Managing manual operations across multiple project stages (like routing folder creation, assigning team subtasks, and drafting individual status updates) causes immense administrative bottlenecks.",
           effects: "Project lifecycles suffer from delayed onboarding velocity, human data entry slips, missing documentation hierarchies, and inconsistent client response loops.",
           solution: "Engineered a sophisticated multi-branch routing architecture using conditional Zapier Paths triggered directly by an Asana task update. The system dynamically splits logic to auto-generate Google Drive asset repositories, build nested Asana subtasks, or dispatch highly tailored client emails via Gmail based on real-time status stages.",
@@ -216,7 +216,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "Change Lead to Quote Automation",
-          image: "/src/assets/images/Change lead to quote.png",
+          image: "/images/Change lead to quote.png",
           problem: "Sales operations faced major bottlenecks when manually converting qualified leads into formal quotes, requiring line-by-line text parsing and repetitive follow-up drafting.",
           effects: "Slower sales turnaround times, data entry errors when transferring details out of workspace tasks, and direct friction in the customer's onboarding experience.",
           solution: "Developed an automated pipeline triggered instantly by an updated task status in Asana. The system passes data through structural Zapier filtering and text loops to parse key payload details, programmatically composing and dispatching a polished, itemized quotation directly via Gmail.",
@@ -231,7 +231,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "Update Task List Automation",
-          image: "/src/assets/images/Update task list.png",
+          image: "/images/Update task list.png",
           problem: "Ops teams frequently suffer from fragmented tracking when parent workflows try to update master spreadsheets, requiring slow, redundant row lookups and manual data overwrites.",
           effects: "Desynchronized internal tracking sheets, double-handling of operational records, and critical clerical entry errors that disrupt cross-department project visibility.",
           solution: "Architected a reusable, modular data wrapper using Zapier Sub-Zaps. The utility intercepts update parameters from any connected parent process, swiftly isolates the correct task identifier within Google Sheets, performs an in-place spreadsheet row modification, and programmatically pipes the updated execution state back to the caller workflow.",
@@ -247,8 +247,8 @@ const RESUME_DATA = {
           type: "combined" as const,
           title: "Task List Updates",
           images: [
-            "/src/assets/images/Updating Task Lists - v4.png",
-            "/src/assets/images/List of tasks to be update - v2.png"
+            "/images/Updating Task Lists - v4.png",
+            "/images/List of tasks to be update - v2.png"
           ],
           problem: "Relying on manual execution or unthrottled single-run triggers to reconcile bulk project lists results in major database bottlenecks, API rate-limiting errors, and data drift across master tracking tables.",
           effects: "Severe reporting latency, significant manual hours spent running cross-sheet reconciliation checklists, and an increased risk of missing high-priority operational targets due to outdated records.",
@@ -300,7 +300,7 @@ const RESUME_DATA = {
       cta: "View Case Study >",
       technicalSummary: "Configured comprehensive GoHighLevel CRM pipelines and automated trigger response systems. Implemented customized client onboarding funnels, scheduled booking calendars, and automated lead nurturing sequences across SMS and Email channels.",
       toolsUsed: ["GoHighLevel", "Twilio", "Stripe", "Zapier", "Webhooks"],
-      workflowImage: "/src/assets/images/ghl_bg_1779693692076.png"
+      workflowImage: "/images/ghl_bg_1779693692076.png"
     },
     {
       platform: "n8n",
@@ -315,7 +315,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "AI Telegram Recruitment Assistant",
-          image: "/src/assets/images/AI Telegram Recruitment Assistant.png",
+          image: "/images/AI Telegram Recruitment Assistant.png",
           problem: "HR teams waste hours manually vetting inbound candidate resumes, coordinating initial interview screens, and answering repetitive application FAQs.",
           effects: "Severe hiring bottlenecks, delayed communication with top-tier talent, and excessive administrative strain on recruitment managers.",
           solution: "Deployed an autonomous Telegram recruitment agent that leverages OpenAI to parse uploaded CVs against job criteria, logs qualified talent into a tracking sheet, and auto-schedules screening calls.",
@@ -330,7 +330,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "AI Lead & Ticket Routing Agent",
-          image: "/src/assets/images/AI Lead & Ticket Routing.png",
+          image: "/images/AI Lead & Ticket Routing.png",
           problem: "Support and sales teams face massive operational bottlenecks manually sorting, prioritizing, and routing incoming tickets across fragmented channels.",
           effects: "Delayed response times, lost high-value sales leads, and significant human capital drained by repetitive triage tasks.",
           solution: "Built an autonomous n8n agent utilizing Webhooks, OpenAI JSON extraction, and conditional logic to instantly eliminate spam, isolate urgent requests for Discord escalation, and auto-draft CRM replies.",
@@ -345,7 +345,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "Automated Lead Screening & Intelligent Routing Engine",
-          image: "/src/assets/images/Automated Lead Screening and Intelligent Routing.png",
+          image: "/images/Automated Lead Screening and Intelligent Routing.png",
           problem: "Sales development reps spend critical hours manually deduplicating inbound web forms, researching target company sizes, and calculating lead scores.",
           effects: "Sluggish follow-up speeds for high-intent enterprise accounts and bloated CRM systems cluttered with junk data records.",
           solution: "Architected a zero-leakage triage engine via webhooks that blocks HubSpot duplicates, runs multi-step AI qualification through OpenRouter, and pushes instant hot-lead alerts to live Slack channels.",
@@ -360,7 +360,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "AI-Driven Client Onboarding Pipeline (v2)",
-          image: "/src/assets/images/Automated Client Onboarding.png",
+          image: "/images/Automated Client Onboarding.png",
           problem: "Post-sale client onboarding is slow and disjointed, requiring manual cloud directory setups, workspace task creation, and client follow-ups.",
           effects: "Slower customer time-to-value, administrative handoff bottlenecks, and an inconsistent initial client impression.",
           solution: "Created an end-to-end onboarding engine triggered by contract signatures that provisions Google Drive, builds custom AI task structures in ClickUp, schedules kickoffs, and deploys a 7-day email sequence.",
@@ -375,7 +375,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "InsightFlow: Marketing RAG & AI Analyst Pipeline",
-          image: "/src/assets/images/InsightFlow Marketing RAG Pipeline.png",
+          image: "/images/InsightFlow Marketing RAG Pipeline.png",
           problem: "Account managers spend hours manually reviewing historical client logs and past campaign data to compile weekly performance summaries.",
           effects: "Delayed reporting intervals, high risk of metric hallucinations, and substantial human hours drained by repetitive manual account tracing.",
           solution: "Architected a weekly n8n RAG pipeline using a LangChain ReAct agent layout that pulls sheet data, queries a Qdrant Vector Database via OpenAI Embeddings for historical context, and auto-generates clean HTML performance summaries.",
@@ -390,7 +390,7 @@ const RESUME_DATA = {
         {
           type: "single" as const,
           title: "MarkOps: Automated Marketing Insights Orchestrator",
-          image: "/src/assets/images/MarkOps AI Orchestrator.png",
+          image: "/images/MarkOps AI Orchestrator.png",
           problem: "Marketing teams waste hours manually aggregating multi-channel ad spend data and writing narrative executive performance updates for clients.",
           effects: "Delayed weekly reporting intervals, high vulnerability to reporting math errors, and tedious administrative overhead.",
           solution: "Formed a scheduled cron workflow that pulls live Google Sheets data, uses OpenAI via OpenRouter to generate analytical ROI narratives, and dynamically pushes updates to Notion and Slack.",
