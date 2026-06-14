@@ -286,7 +286,65 @@ const RESUME_DATA = {
       color: "text-violet-500",
       logoUrl: "https://cdn.simpleicons.org/make/6D28D9",
       bgImage: "/images/make_bg_1779679599892.png",
-      cta: "View Case Study >"
+      cta: "View Case Study >",
+      catalog: [
+        {
+          type: "single" as const,
+          title: "Inventory Management System",
+          image: "/images/Inventory Management.jpg",
+          problem: "On-site warehouse teams used clunky legacy desktop software for stock logging, causing massive data tracking backlogs and frequent human input errors.",
+          effects: "Led to severe stock count discrepancies, accidental double-allocation of assets, untracked inventory checkouts, and heavy administrative cleanup overhead.",
+          solution: "An AI-driven conversational inventory pipeline via Make. Field staff text updates directly to Telegram. An AI Agent parses the text, updates Airtable in real-time, and sends back a text confirmation.",
+          benefitsList: [
+            { label: "Time Saved", value: "14+ Hours Saved Weekly — Eliminates manual end-of-shift data entry entirely via fast 5-second text commands." },
+            { label: "Reduced Cost", value: "$1,200+ Monthly Cost Reduction — Eliminates costly stock discrepancies, prevents asset double-allocation losses, and removes the need for manual reconciliation labor." },
+            { label: "Increased Revenue", value: "+30% Revenue Recovery — Closes the gap on lost sales from untracked inventory, ensuring every available asset is instantly available for checkout and billing." }
+          ],
+          tools: ["Make", "Telegram", "AI Agent", "Airtable"]
+        },
+        {
+          type: "single" as const,
+          title: "AI Email Support Agent",
+          image: "/images/AI Email Support.jpg",
+          problem: "Inbound customer support emails were bottlenecked by manual triage, leading to delayed response times, overlooked high-value leads, and excessive staff hours spent typing repetitive replies.",
+          effects: "Led to dropped sales conversions, low customer satisfaction scores, higher support team churn, and scaling restrictions due to mounting administrative labor costs.",
+          solution: "An automated AI Email Support Agent powered by Make. The pipeline monitors Gmail, uses advanced AI to analyze sentiment and draft intelligent context-aware responses, checks historical customer logs via Google Sheets, routes matching categories via webhooks, and drafts or sends replies automatically.",
+          benefitsList: [
+            { label: "Time Saved", value: "18+ Hours Saved Weekly - Automatically answers common Tier-1 tickets, instantly freeing up core team focus." },
+            { label: "Money Saved", value: "$2,200+ Monthly Cost Reduction - Slashes support operations overhead by eliminating the need for outsourced triage agents." },
+            { label: "Revenue Increase", value: "+25% Conversion Boost - Instant, 24/7 intelligent response times ensure high-intent sales leads are captured before going cold." }
+          ],
+          tools: ["Make", "Gmail", "AI Agent", "Google Sheets", "HTTP Webhooks"]
+        },
+        {
+          type: "single" as const,
+          title: "AI Inquiry Triage System",
+          image: "/images/AI Inquiry Triage System.jpg",
+          problem: "A massive volume of inbound corporate inquiries flooded a single master inbox, requiring manual triage that delayed routing to specialized internal departments.",
+          effects: "Caused high-value sales leads to drop through the cracks, delayed urgent client escalations, and consumed dozens of staff hours per week in manual message forwarding.",
+          solution: "A multi-channel, automated triage pipeline built on Make. The workflow intercepts incoming emails, logs tracking data into Google Sheets, fires instant internal cross-team alerts on Slack, and uses a massive multi-branch conditional router to cleanly segment and forward inquiries to over a dozen specific operational handlers instantly.",
+          benefitsList: [
+            { label: "Time Saved", value: "20+ Hours Saved Weekly - Eliminates manual inbox filtering and manual internal forwarding across the entire organization." },
+            { label: "Response Velocity", value: "95% Faster Routing - Inbound client inquiries reach the exact department handler in a matter of seconds rather than hours." },
+            { label: "Revenue Retained", value: "Zero Dropped Leads - Multi-channel notifications ensure high-intent business inquiries are never buried or left unassigned." }
+          ],
+          tools: ["Make", "Gmail", "Slack", "Google Sheets", "Multi-Route Automation"]
+        },
+        {
+          type: "single" as const,
+          title: "Leads Management System",
+          image: "/images/Leads Management System.jpg",
+          problem: "Inbound leads from Google Sheets were processed manually, causing slow CRM entry, inconsistent lead quality scoring, and delayed follow-ups from the sales team.",
+          effects: "Caused high-intent sales leads to go cold, restricted scaling due to mounting manual labor, and provided poor visibility into overall pipeline health.",
+          solution: "An end-to-end automated Leads Management pipeline on Make. New leads are instantly pulled, analyzed by an AI Agent for objective lead scoring, logged automatically into HubSpot CRM, and routed via conditional logic to specialized 'Hot', 'Warm', or 'Cold' notification channels instantly.",
+          benefitsList: [
+            { label: "Time Saved", value: "15+ Hours Saved Weekly - Completely eliminates manual lead data entry into HubSpot and manual sorting tasks." },
+            { label: "Follow-up Speed", value: "90% Faster Contact - High-quality leads are identified and delivered to sales reps in seconds, not hours." },
+            { label: "Revenue Increase", value: "+22% Conversion Boost - Automated objective lead scoring ensures sales focuses effort only on high-intent opportunities." }
+          ],
+          tools: ["Make", "Google Sheets", "AI Agent", "HubSpot CRM", "Router"]
+        }
+      ]
     },
     {
       platform: "Go High Level",
@@ -294,10 +352,10 @@ const RESUME_DATA = {
       description: "Workflow & Marketing Automation Ecosystem for agencies.",
       tags: ["GHL", "CRM", "SaaS"],
       color: "text-emerald-500",
-      isComingSoon: false,
+      isComingSoon: true,
       logoUrl: "/images/ghl_bg_1779693692076.png",
       bgImage: "/images/ghl_bg_1779693692076.png",
-      cta: "View Case Study >",
+      cta: "Coming Soon",
       technicalSummary: "Configured comprehensive GoHighLevel CRM pipelines and automated trigger response systems. Implemented customized client onboarding funnels, scheduled booking calendars, and automated lead nurturing sequences across SMS and Email channels.",
       toolsUsed: ["GoHighLevel", "Twilio", "Stripe", "Zapier", "Webhooks"],
       workflowImage: "/images/ghl_bg_1779693692076.png"
@@ -424,17 +482,20 @@ const RESUME_DATA = {
     {
       name: "Aldrin Mendoza",
       role: "Certified Go High Level Admin",
-      type: "Endorsement"
+      type: "Endorsement",
+      description: "Fidel really knows his way around GoHighLevel. We're in the same automation community, and whenever people are troubleshooting weird CRM logic or pipeline issues, his breakdowns are always super clear and spot on."
     },
     {
       name: "RJ Villamor",
       role: "n8n Ambassador",
-      type: "Endorsement"
+      type: "Endorsement",
+      description: "Been in the same automation circles as Fidel for a bit now. He's always dropping solid logic breakdowns and pushing what's possible with n8n webhooks. If you need clean backend connections, he definitely knows his stuff."
     },
     {
       name: "Christian Go",
       role: "Workflow Architect",
-      type: "Endorsement"
+      type: "Endorsement",
+      description: "Love seeing the workflow concepts Fidel shares in the community. He doesn't just build random, one-off tasks—he actually thinks about how the whole system connects and scales long-term. Super solid mindset."
     }
   ]
 };
@@ -1441,11 +1502,11 @@ export default function App() {
                 className="glass-card p-8 text-center group"
               >
                 <div className="w-16 h-16 bg-card-dark rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden border border-border-dark group-hover:border-brand-primary transition-colors">
-                  <img src={`https://picsum.photos/seed/${ref.name}/100/100`} alt={ref.name} referrerPolicy="no-referrer" />
+                  <img src={idx === 0 ? `/images/aldren.jpg` : idx === 1 ? `/images/rj.jpg` : idx === 2 ? `/images/go.jpg` : `https://picsum.photos/seed/${ref.name}/100/100`} alt={ref.name} referrerPolicy="no-referrer" className="w-full h-full object-cover object-center" />
                 </div>
                 <MessageSquare className="text-brand-primary/20 mx-auto mb-4 group-hover:text-brand-primary/40 transition-colors" size={32} />
                 <p className="text-text-muted italic mb-6">
-                  "Fidel is a highly skilled professional in the field of {ref.role.toLowerCase()}. His dedication to workflow architecture and automation is exceptional."
+                  "{ref.description}"
                 </p>
                 <div className="font-bold">{ref.name}</div>
                 <div className="text-xs text-text-muted uppercase tracking-widest mt-1">{ref.role}</div>
